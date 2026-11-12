@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<div class="calendar-header">
+    <button class="calendar-btn" id="prev-month">Previous</button>
+    <h3 id="month-year"></h3>
+    <button class="calendar-btn" id="next-month">Next</button>
+</div>
+
+<div id="event-form" hidden>
+    <h3 id="selected-date"></h3>
+    <form id="save-event">
+        <input type="text" id="event-title"
+        placeholder="Event title" required>
+    
+        <textarea id="event-description"
+        placeholder="Event Description" required></textarea>
+
+        <div class="event-buttons">
+            <button type="submit" class="save-btn">Save Event</button>
+
+            <button type="button" class="cancel-btn" id="cancel-event">
+                Cancel
+            </button>
+        </div>
+    
+
+</div>
+
+<div class="weekdays">
+    <div>Monday</div>
+    <div>Tuesday</div>
+    <div>Wednesday</div>
+    <div>Thursday</div>
+    <div>Friday</div>
+    <div>Saturday</div>
+    <div>Sunday</div>
+</div>
+
+<div class="calendar-grid" id="calendar"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

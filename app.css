@@ -1,0 +1,134 @@
+
+
+.calendar-header {
+     background: linear-gradient(40deg,
+    #616161,
+    #9bc5c3
+     );
+    padding: 20px;
+    gap: 15px;
+    color: #fff;
+    min-height: 50dvh;
+    text-align: center;
+}
+
+
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    gap: 10px;
+}
+
+.calendar-grid {
+    padding: 15px;
+    color: #fff;
+    background: #fff;
+    min-height: 40dvh;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+
+
+.calendar-day {
+    display: flex;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px;
+    background: #fff;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.calendar-day:hover {
+    background-color: #d83b1d;
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.calendar-day2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: #000;
+}
+
+
+.calendar-btn {
+    padding: 25px;
+    border: none;
+    background: #f54927;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+
+#event-form {
+     padding: 25px;
+    border: none;
+    background: #f54927;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+
+#event-form[hidden] {
+    display: none;
+}
+
+
+.event-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.save-btn {
+    background-color: #F54927;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.cancel-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.save-btn:hover {
+    background-color: #d83b1d;
+    transform: translateY(-2px);
+}
+
+.cancel-btn:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
